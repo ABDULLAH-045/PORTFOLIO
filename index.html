@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PORTFOLIO</title>
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Custom styles (kept inside single file for convenience) -->
+  <style>
+    /* --- Reset / base --- */
+    :root{--bg:#0b0b0c;--muted:#9aa0a6;--accent:#00aaff}
+    body{font-family: 'Helvetica Neue', Arial, sans-serif;color:#222;margin:0;background:#fff}
+    a{color:inherit}
+
+    /* --- Top bar / header --- */
+    .topbar{background:#000;color:#fff;padding:.5rem 0;font-size:.9rem}
+    .site-header{padding:1rem 0}
+    .navbar-nav .nav-link{padding:.5rem 1rem}
+    .navbar-brand{font-weight:700;letter-spacing:.6px}
+
+    /* --- Hero slider --- */
+    .hero{position:relative;overflow:hidden}
+    .hero .owl-item img{width:100%;height:75vh;object-fit:cover}
+    .hero-caption{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;color:#fff}
+    .hero-caption h1{font-size:3rem;margin-bottom:.4rem}
+    .hero-caption p{font-size:1.1rem;opacity:.9}
+
+    /* --- Gallery --- */
+    .portfolio{padding:4rem 0}
+    .portfolio .grid{display:flex;flex-wrap:wrap;margin:-10px}
+    .portfolio .grid .item{width:33.333%;padding:10px}
+    .portfolio .grid img{display:block;width:100%;height:260px;object-fit:cover;border-radius:4px}
+
+    /* --- About / sections --- */
+    section{padding:4rem 0}
+    .section-title{margin-bottom:2rem}
+
+    /* --- Footer --- */
+    footer{background:#111;color:#bbb;padding:3rem 0}
+
+    /* Responsive tweaks */
+    @media (max-width:767px){
+      .portfolio .grid .item{width:50%}
+      .hero-caption h1{font-size:2rem}
+      .hero .owl-item img{height:55vh}
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container d-flex justify-content-between">
+        <div>Mail: <a href="#"></a> — <a href="#">abdullaha.basit95@gmail.com</a></div>
+      <div>Follow: <a href="#">Instagram</a> — <a href="#">@bdullah</a></div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+   
+    <div>
+        <style>header {
+            position: sticky; /* or use fixed */
+            top: 0;
+            z-index: 1000; /* keeps it above other elements */
+          }
+          </style>
+        
+        <header>
+          <nav class="navbar navbar-expand-lg" style="background-color: #000; width: 100%; height: 90px;">
+
+              <div class="container-fluid"><!-- full width container -->
+                <a class="navbar-brand" href="#" style="color: #fff;">ALIME</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                  <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #fff;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery" style="color: #fff;">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" style="color: #fff;">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" style="color: #fff;">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+          
+          
+    </div>
+  </header>
+
+  <!-- Hero slider -->
+  <section class="hero">
+    <div class="owl-carousel owl-theme" id="heroCarousel">
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D" alt="slide-1">
+        <div class="hero-caption text-center">
+          <h1>I photograph instinctively</h1>
+          <p>Contemporary imagery for editorial and personal projects</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=1600&q=80&auto=format&fit=crop" alt="slide-2">
+        <div class="hero-caption text-center">
+          <h1>Selected Works</h1>
+          <p>Portraits — Landscape — Editorial</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro / CTA -->
+  <section class="relative bg-cover bg-center bg-no-repeat min-h-screen" style="background-image: url('/image1.jpg')">
+    <!-- Overlay: light background to contrast with black text -->
+    <div class="absolute inset-0 bg-white/60"></div>
+  
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center text-center text-black px-4 py-20">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm ABDULAH</h2>
+      <p class="text-lg md:text-xl mb-6">A passionate WEB-DEVELOUPER.</p>
+      <a href="#contact" class="mt-3 border border-black text-black hover:bg-black hover:text-white transition px-6 py-2 rounded">
+        Get a Quote
+      </a>
+    </div>
+  </section>
+  
+  
+
+  <!-- Gallery / Portfolio -->
+  <section id="gallery" class="portfolio bg-light">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h3 class="section-title">Latest Projects</h3>
+          <p class="mb-0">A handpicked selection from recent shoots. Click an image to open the modal view.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- 12 sample images -->
+        <div class="item"><a class="portfolio-link" href="image1.jpg"><img src="/image1.jpg" alt="p1"></a></div>
+        <div class="item"><a class="portfolio-link" href="image2.jpg"><img src="/image2.jpg" alt="p2"></a></div>
+        <div class="item"><a class="portfolio-link" href="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1400&q=80&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&q=60&auto=format&fit=crop" alt="p3"></a></div>
+        <div class="item"><a class="portfolio-link" href="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1400&q=80&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=60&auto=format&fit=crop" alt="p4"></a></div>
+        <div class="item"><a class="portfolio-link" href="https://images.unsplash.com/photo-1482192505345-5655af888cc4?w=1400&q=80&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?w=800&q=60&auto=format&fit=crop" alt="p5"></a></div>
+        <div class="item"><a class="portfolio-link" href="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=1400&q=80&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=800&q=60&auto=format&fit=crop" alt="p6"></a></div>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Services -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>About Me</h3>
+          <p>I am a freelance photographer based between cities. I work with editorial teams and private clients to capture authentic moments and refined portraits.</p>
+          <ul>
+            <li>Editorial Photography</li>
+            <li>Portraits & Headshots</li>
+            <li>Commercial Shoots</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Latest News</h3>
+          <p>Exhibitions, features and upcoming projects. Subscribe to get updates.</p>
+          <form class="form-inline">
+            <input class="form-control mr-2" type="email" placeholder="Your email">
+            <button class="btn btn-dark">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Contact</h4>
+          <p>Email: hello.alime@gmail.com<br>Phone: +1 (555) 123-4567</p>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="form-group"><input class="form-control" placeholder="Name"></div>
+            <div class="form-group"><input class="form-control" placeholder="Email"></div>
+            <div class="form-group"><textarea class="form-control" rows="3" placeholder="Message"></textarea></div>
+            <button class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-1">&copy; <span id="year"></span> Alime. All rights reserved.</p>
+      <p class="mb-0">Designed with ♥ — Demo build</p>
+    </div>
+  </footer>
+
+  <!-- JS libs -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // hero carousel
+    jQuery(function($){
+      $('#heroCarousel').owlCarousel({items:1,loop:true,autoplay:true,autoplayTimeout:5000,nav:true,navText:['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>']});
+
+      // magnific popup for portfolio
+      $('.portfolio-link').magnificPopup({type:'image',gallery:{enabled:true}});
+
+      // simple isotope masonry (keeps original order)
+      var $grid = $('.grid').imagesLoaded(function(){
+        // no isotope layout here, using flexbox, but keep imagesLoaded event in case you want to initialize isotope
+      });
+    });
+  </script>
+</body>
+</html>
