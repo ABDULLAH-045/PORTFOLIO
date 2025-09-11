@@ -24,7 +24,8 @@
 
     /* --- Top bar / header --- */
     .topbar{background:#000;color:#fff;padding:.5rem 0;font-size:.9rem}
-    .site-header{padding:1rem 0}
+
+    .site-header{padding-top:3px}
     .navbar-nav .nav-link{padding:.5rem 1rem}
     .navbar-brand{font-weight:700;letter-spacing:.6px}
 
@@ -42,7 +43,7 @@
     .portfolio .grid img{display:block;width:100%;height:260px;object-fit:cover;border-radius:4px}
 
     /* --- About / sections --- */
-    section{padding:4rem 0}
+    section{padding:3rem 0}
     .section-title{margin-bottom:2rem}
 
     /* --- Footer --- */
@@ -61,7 +62,11 @@
 
   <!-- Topbar -->
   <div class="topbar">
-    <div class="container d-flex justify-content-between">
+
+    <div class="container d-flex justify-content-between"  .topbar {
+      margin: 0;
+      padding: 500px 0;
+    } >
         <div>Mail: <a href="#"></a> — <a href="#">abdullaha.basit95@gmail.com</a></div>
       <div>Follow: <a href="#">Instagram</a> — <a href="#">@bdullah</a></div>
     </div>
@@ -73,6 +78,7 @@
     <div>
         <style>header {
             position: sticky; /* or use fixed */
+          
             top: 0;
             z-index: 1000; /* keeps it above other elements */
           }
@@ -103,41 +109,23 @@
   </header>
 
   <!-- Hero slider -->
-  <section class="hero">
     <div class="owl-carousel owl-theme" id="heroCarousel">
       <div class="item">
-        <img src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D" alt="slide-1">
+        <img src="slide1 final.png" alt="slide-1">
         <div class="hero-caption text-center">
-          <h1>I photograph instinctively</h1>
-          <p>Contemporary imagery for editorial and personal projects</p>
+          <h1>Hello, I'm ABDULAH</h1>
+          <p>A Full Stack Developer.</p>
         </div>
       </div>
       <div class="item">
-        <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?w=1600&q=80&auto=format&fit=crop" alt="slide-2">
+        <img src="slider2.png" alt="slide-2">
         <div class="hero-caption text-center">
           <h1>Selected Works</h1>
-          <p>Portraits — Landscape — Editorial</p>
+          <p>WEB-DEVELOUPER — WEB-DESIGN — WORDPRESS </p>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Intro / CTA -->
-  <section class="relative bg-cover bg-center bg-no-repeat min-h-screen" style="background-image: url('/image1.jpg')">
-    <!-- Overlay: light background to contrast with black text -->
-    <div class="absolute inset-0 bg-white/60"></div>
-  
-    <!-- Content -->
-    <div class="relative z-10 flex flex-col items-center justify-center text-center text-black px-4 py-20">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm ABDULAH</h2>
-      <p class="text-lg md:text-xl mb-6">A passionate WEB-DEVELOUPER.</p>
-      <a href="#contact" class="mt-3 border border-black text-black hover:bg-black hover:text-white transition px-6 py-2 rounded">
-        Get a Quote
-      </a>
-    </div>
-  </section>
-  
-  
+  </div>
 
   <!-- Gallery / Portfolio -->
   <section id="gallery" class="portfolio bg-light">
@@ -145,7 +133,7 @@
       <div class="row mb-4">
         <div class="col-12 text-center">
           <h3 class="section-title">Latest Projects</h3>
-          <p class="mb-0">A handpicked selection from recent shoots. Click an image to open the modal view.</p>
+          <p class="mb-0">A handpicked selection from recent projects.</p>
         </div>
       </div>
 
@@ -168,11 +156,17 @@
       <div class="row">
         <div class="col-md-6">
           <h3>About Me</h3>
-          <p>I am a freelance photographer based between cities. I work with editorial teams and private clients to capture authentic moments and refined portraits.</p>
+          <p>I’m a passionate web developer dedicated to building high-quality, modern, and efficient digital solutions. With a strong background in both front-end and back-end development, I specialize in creating responsive, user-friendly websites that combine functionality with clean design.</p>
+            <p>My expertise covers developing custom web applications, optimizing performance, and delivering scalable solutions tailored to client needs. I focus on writing clean, maintainable code while ensuring every project meets the highest standards of usability and security.</p>
+
+             <p> I am committed to continuous growth, staying current with the latest technologies and industry trends, and applying innovative approaches to problem-solving. My goal is to help businesses and individuals establish a strong digital presence through reliable, impactful, and well-crafted web solutions.</p>
           <ul>
-            <li>Editorial Photography</li>
-            <li>Portraits & Headshots</li>
-            <li>Commercial Shoots</li>
+            <li>“Transforming ideas into seamless digital experiences.”</li>
+            <li>“Building modern, scalable, and user-focused web solutions.”</li>
+            <li>“Crafting clean code and impactful websites.”</li>
+            <li>“Turning vision into reality through web development.”</li>
+            <li>“Professional web developer committed to excellence.”</li>
+          
           </ul>
         </div>
         <div class="col-md-6">
@@ -193,7 +187,7 @@
       <div class="row">
         <div class="col-md-6">
           <h4>Contact</h4>
-          <p>Email: hello.alime@gmail.com<br>Phone: +1 (555) 123-4567</p>
+          <p>Email: abdullaha.basit95@gmail.com<br>Phone: (+92)3131143337</p>
         </div>
         <div class="col-md-6">
           <form>
@@ -211,7 +205,7 @@
   <footer>
     <div class="container text-center">
       <p class="mb-1">&copy; <span id="year"></span> Alime. All rights reserved.</p>
-      <p class="mb-0">Designed with ♥ — Demo build</p>
+      <p class="mb-0">Designed with ♥ —</p>
     </div>
   </footer>
 
